@@ -1,5 +1,8 @@
 import './App.css';
-import PromiseContainer from './components/promiseContainer/PromiseContainer';
+import'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+import Fetch from './components/fetch/Fetch';
+
 
 function App() {
   const info = 'esta es la info del componente'
@@ -7,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <h2>Practica React</h2>
-      <PromiseContainer/>
+      <Fetch/>
     </div>
   );
 }

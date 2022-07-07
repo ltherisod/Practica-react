@@ -1,10 +1,10 @@
 import React,{useEffect} from 'react'
 import { useState } from 'react'
 import { data } from '../../mocks/mockApi'
+
 const PromiseContainer = () => {
     const [lista, setLista]= useState([])
     const [loading, setLoading] = useState(true)
-
 
     //tratar promesa con then catch y finally
 //    useEffect(()=>{
