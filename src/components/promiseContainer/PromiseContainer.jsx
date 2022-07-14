@@ -1,6 +1,7 @@
 import React,{useEffect} from 'react'
 import { useState } from 'react'
 import { data } from '../../mocks/mockApi'
+import DetalleContainer from '../detalle/DetalleContainer'
 
 const PromiseContainer = () => {
     const [lista, setLista]= useState([])
@@ -32,6 +33,7 @@ const getData = async () => {
     },[])
   return (
     <div>
+        <p>Promise</p>
         {loading ? <p>Cargando data...</p> : lista.map((item)=> <p key={item.id}>{item.name}</p>)}
     </div>
   )

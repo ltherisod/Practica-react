@@ -38,6 +38,7 @@ const Fetch = () => {
     //   .catch(() => setError(true))
     //   .finally(()=> setLoading(false))
     // }, [])
+    
     //RETURN ANTICIPADO
     // if(loading){
     //  return <p>Cargando</p>
@@ -52,7 +53,8 @@ const Fetch = () => {
         {loading 
         ? <p>Cargando</p> 
         : error ? <p>Error, intente mas tarde </p>
-        : <List personajes={personajes} />}
+        : <List personajes={personajes} />
+        }
     </div>
   )
 }
